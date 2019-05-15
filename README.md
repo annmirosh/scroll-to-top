@@ -26,7 +26,7 @@ frameworks or in the VanillaJS app.
     defineCustomElements(window);
     ```
 
-    -for Vue.js project define custom elements in the main.js file:
+    - for Vue.js project define custom elements in the main.js file:
 
     ```
     import { defineCustomElements } from 'scroll-to-top-btn/dist/loader';
@@ -34,7 +34,7 @@ frameworks or in the VanillaJS app.
     // tell Vue to ignore all components defined in the test-components
     // package.
     Vue.config.ignoredElements = [/scroll-to-top-btn/];
-  
+
     defineCustomElements(window);
     ```
 
