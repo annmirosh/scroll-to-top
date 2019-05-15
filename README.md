@@ -15,27 +15,27 @@ frameworks or in the VanillaJS app.
 
 2. Depending on the framework that you use, enable the custom HTML elements.
 
-    - for vanila js project add script tag to the page:
+    - for *vanila js* project add script tag to the page:
 
     ```<script src="node_modules/scroll-to-top-btn/dist/scrolltotop.js"></script>```
 
-    - for React project define custom elements in the main.js file:
+    - for *React* project define custom elements in the main.js file:
 
     ```
     import { defineCustomElements } from 'scroll-to-top-btn/dist/loader';
     defineCustomElements(window);
     ```
 
-    - for Vue.js project define custom elements in the main.js file:
+    - for *Vue.js* project define custom elements in the main.js file:
 
     ```
     import { defineCustomElements } from 'scroll-to-top-btn/dist/loader';
-
-    // tell Vue to ignore all components defined in the test-components
-    // package.
     Vue.config.ignoredElements = [/scroll-to-top-btn/];
-
     defineCustomElements(window);
     ```
 
-3. Add <scroll-to-top-btn></scroll-to-top-btn> to the page/view.
+3. Add ```scroll-to-top-btn``` to the page/view.
+
+    ```
+    <scroll-to-top-btn mode="light"></scroll-to-top-btn>
+    ```
