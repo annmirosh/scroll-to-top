@@ -22,6 +22,8 @@ export class ScrollToTopBtn {
      */
     @State() visible: boolean = false;
     @Prop() mode: string = 'dark';
+    @Prop() right: number;
+    @Prop() bottom: number;
     @Prop() direction: string = 'top';
 
     constructor() {
@@ -54,6 +56,7 @@ export class ScrollToTopBtn {
 
     render() {
         return <div class={`scroll-to-top-btn ${this.mode} ${this.visible && 'visible'}`}
+                    style={{right: `${this.right}px`, bottom: `${this.bottom}px`}}
                     onClick={this.scroll}/>;
     }
 }

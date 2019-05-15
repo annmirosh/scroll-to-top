@@ -13,12 +13,16 @@ import '@stencil/core';
 export namespace Components {
 
   interface ScrollToTopBtn {
+    'bottom': number;
     'direction': string;
     'mode': string;
+    'right': number;
   }
   interface ScrollToTopBtnAttributes extends StencilHTMLAttributes {
+    'bottom'?: number;
     'direction'?: string;
     'mode'?: string;
+    'right'?: number;
   }
 }
 
