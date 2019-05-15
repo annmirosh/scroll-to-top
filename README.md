@@ -17,7 +17,7 @@ frameworks or in the VanillaJS app.
 
     - for vanila js project add script tag to the page:
 
-        ```<script src="node_modules/scroll-to-top-btn/dist/scrolltotop.js"></script>```
+    ```<script src="node_modules/scroll-to-top-btn/dist/scrolltotop.js"></script>```
 
     - for React project define custom elements in the main.js file:
 
