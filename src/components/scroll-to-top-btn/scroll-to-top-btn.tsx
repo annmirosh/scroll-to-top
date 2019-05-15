@@ -21,7 +21,7 @@ export class ScrollToTopBtn {
      * The mode: dark or light
      */
     @State() visible: boolean = false;
-    @Prop() mode: string = 'dark';
+    @Prop() mode: string = 'light';
     @Prop() right: number;
     @Prop() bottom: number;
     @Prop() direction: string = 'top';
