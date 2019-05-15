@@ -1,6 +1,6 @@
 {
   "name": "scroll-to-top-btn",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Scroll to top button component",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
@@ -25,6 +25,11 @@
     "type": "git",
     "url": "https://github.com/annmirosh/scroll-to-top"
   },
+  "keywords": [
+    "scroll",
+    "scroll to top",
+    "scroll page"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@stencil/core": "~0.16.2"
