@@ -1,12 +1,13 @@
 {
   "name": "scroll-to-top-btn",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Scroll to top button component",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "unpkg": "dist/ionic.js",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
+  "homepage": "https://annmirosh.github.io/scroll-to-top/",
   "files": [
     "dist/"
   ],
@@ -17,6 +18,13 @@
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "author": "Anna Miroshnichenko",
+  "bugs": {
+    "url": "https://github.com/annmirosh/scroll-to-top/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/annmirosh/scroll-to-top"
+  },
   "dependencies": {},
   "devDependencies": {
     "@stencil/core": "~0.16.2"
