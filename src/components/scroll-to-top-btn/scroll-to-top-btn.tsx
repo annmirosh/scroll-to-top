@@ -17,13 +17,22 @@ function scrollToTop() {
 })
 
 export class ScrollToTopBtn {
-    /**
-     * The mode: dark or light
-     */
     @State() visible: boolean = false;
+
+    /** Property that defines mode of the button (can be "light" or "dark")
+     * */
     @Prop() mode: string = 'light';
+
+    /** Property that defines the right position of the button (in px)
+     * */
     @Prop() right: number;
+
+    /** Property that defines the bottom position of the button (in px)
+     * */
     @Prop() bottom: number;
+
+    /** Property that defines the direction of the scroll (for now only the "top" direction is available)
+     * */
     @Prop() direction: string = 'top';
 
     constructor() {
