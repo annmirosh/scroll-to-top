@@ -39,44 +39,45 @@ Add some long content here
 ```
 
 ### For React project (see the demo [here](https://github.com/annmirosh/scroll-to-top-demos/tree/master/react-demo)):
-    Define custom elements in the index.js or main.js file
+Define custom elements in the index.js or main.js file
 
 
-    ```
-    import {defineCustomElements} from 'scroll-to-top-btn/dist/loader';
+```
+import {defineCustomElements} from 'scroll-to-top-btn/dist/loader';
 
-    ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 
-    defineCustomElements(window);
-    ```
+defineCustomElements(window);
+```
 
-    Use the component on your view:
+Use the component on your view:
 
-    ```
-    import React from 'react';
-    import logo from './logo.svg';
-    import './App.css';
+```
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
 
-    function App() {
-      return (
-        <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            {/*Add some long content here*/}
-            <scroll-to-top-btn mode="dark"></scroll-to-top-btn>
-          </header>
-        </div>
-      );
-    }
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        {/*Add some long content here*/}
+        <scroll-to-top-btn mode="dark"></scroll-to-top-btn>
+      </header>
+    </div>
+  );
+}
 
-    export default App;
-    ```
+export default App;
+```
 
 ### For Vue.js project:
-    Define custom elements in the main.js file:
 
-    ```
-    import { defineCustomElements } from 'scroll-to-top-btn/dist/loader';
-    Vue.config.ignoredElements = [/scroll-to-top-btn/];
-    defineCustomElements(window);
-    ```
+Define custom elements in the main.js file:
+
+```
+import { defineCustomElements } from 'scroll-to-top-btn/dist/loader';
+Vue.config.ignoredElements = [/scroll-to-top-btn/];
+defineCustomElements(window);
+```
