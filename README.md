@@ -92,3 +92,44 @@ Add component to the template:
     </div>
 </template>
 ```
+
+### For Angular project (see the code example [here](https://github.com/annmirosh/scroll-to-top-demos/tree/master/angular-demo)):
+
+Define custom elements in the main.ts file:
+
+```
+import {defineCustomElements} from 'scroll-to-top-btn/dist/loader';
+
+defineCustomElements(window);
+```
+
+In the module where you are going to use the component import CUSTOM_ELEMENTS_SCHEMA to have ability to use custom elements.
+
+```
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
+})
+export class AppModule { }
+```
+
+Add component's tag to your view:
+
+```
+<div>
+  <b>Add some long content here</b>
+  <scroll-to-top-btn></scroll-to-top-btn>
+</div>
+```
