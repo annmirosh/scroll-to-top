@@ -31,7 +31,7 @@ Use the component on your page:
     <script src="node_modules/scroll-to-top-btn/dist/scrolltotop.js"></script>
 </head>
 <body>
-Add some long content here
+<b>Add some long content here</b>
 <scroll-to-top-btn></scroll-to-top-btn>
 
 </body>
@@ -62,7 +62,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {/*Add some long content here*/}
+        <b>Add some long content here</b>
         <scroll-to-top-btn mode="dark"></scroll-to-top-btn>
       </header>
     </div>
@@ -72,12 +72,23 @@ function App() {
 export default App;
 ```
 
-### For Vue.js project:
+### For Vue.js project (see the demo [here](https://github.com/annmirosh/scroll-to-top-demos/tree/master/vue-demo)):
 
-Define custom elements in the main.js file:
+Define custom elements in the index.js or main.js file:
 
 ```
 import { defineCustomElements } from 'scroll-to-top-btn/dist/loader';
 Vue.config.ignoredElements = [/scroll-to-top-btn/];
 defineCustomElements(window);
+```
+
+Add component to the template:
+
+```
+<template>
+    <div id="app">
+        <b>Add some long content here</b>
+        <scroll-to-top-btn></scroll-to-top-btn>
+    </div>
+</template>
 ```
