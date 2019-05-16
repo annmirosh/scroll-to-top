@@ -15,13 +15,31 @@ frameworks or in the VanillaJS app.
 
 2. Depending on the framework that you use, enable the custom HTML elements and use ```<scroll-to-top-btn></scroll-to-top-btn>``` tag in your code:
 
-    - for *vanila js* project add script tag to the page:
+    - #### For Vanilla JS project (see the demo [here](https://github.com/annmirosh/scroll-to-top-demos/tree/master/vanilla-js-demo)):
+    Add script tag to the page:
 
     ```<script src="node_modules/scroll-to-top-btn/dist/scrolltotop.js"></script>```
 
+    Use the component on your page:
+
+    ```
+    <!DOCTYPE html>
+    <html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="node_modules/scroll-to-top-btn/dist/scrolltotop.js"></script>
+    </head>
+    <body>
+    Add some long content here
+    <scroll-to-top-btn></scroll-to-top-btn>
+
+    </body>
+    </html>
+    ```
+
     - #### For React project:
     Define custom elements in the index.js or main.js file
-    (see React demo [here](https://github.com/annmirosh/scroll-to-top-demos/tree/master/react-demo))
+    (see the demo [here](https://github.com/annmirosh/scroll-to-top-demos/tree/master/react-demo))
 
     ```
     import {defineCustomElements} from 'scroll-to-top-btn/dist/loader';
@@ -43,6 +61,7 @@ frameworks or in the VanillaJS app.
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
+            {/*Add some long content here*/}
             <scroll-to-top-btn mode="dark"></scroll-to-top-btn>
           </header>
         </div>
@@ -52,16 +71,11 @@ frameworks or in the VanillaJS app.
     export default App;
     ```
 
-    - for *Vue.js* project define custom elements in the main.js file:
+    - #### For Vue.js project:
+    Define custom elements in the main.js file:
 
     ```
     import { defineCustomElements } from 'scroll-to-top-btn/dist/loader';
     Vue.config.ignoredElements = [/scroll-to-top-btn/];
     defineCustomElements(window);
-    ```
-
-3. Add ```scroll-to-top-btn``` to the page/view.
-
-    ```
-    <scroll-to-top-btn mode="light"></scroll-to-top-btn>
     ```
