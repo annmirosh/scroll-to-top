@@ -5,7 +5,6 @@ function scrollToTop() {
         setTimeout(function () {
             window.scrollTo(0, window.scrollY - 10);
             scrollToTop();
-            console.info('scroll');
         }, 5);
     }
 }
