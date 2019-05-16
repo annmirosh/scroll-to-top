@@ -15,7 +15,7 @@ frameworks or in the VanillaJS app.
 
 2. Depending on the framework that you use, enable the custom HTML elements and use ```<scroll-to-top-btn></scroll-to-top-btn>``` tag in your code:
 
-### For Vanilla JS project (see the demo [here](https://github.com/annmirosh/scroll-to-top-demos/tree/master/vanilla-js-demo)):
+### For Vanilla JS project (see the code example [here](https://github.com/annmirosh/scroll-to-top-demos/tree/master/vanilla-js-demo)):
 
 Add script tag to the page:
 
@@ -38,7 +38,7 @@ Use the component on your page:
 </html>
 ```
 
-### For React project (see the demo [here](https://github.com/annmirosh/scroll-to-top-demos/tree/master/react-demo)):
+### For React project (see the code example [here](https://github.com/annmirosh/scroll-to-top-demos/tree/master/react-demo)):
 Define custom elements in the index.js or main.js file
 
 
@@ -72,7 +72,7 @@ function App() {
 export default App;
 ```
 
-### For Vue.js project (see the demo [here](https://github.com/annmirosh/scroll-to-top-demos/tree/master/vue-demo)):
+### For Vue.js project (see the code example [here](https://github.com/annmirosh/scroll-to-top-demos/tree/master/vue-demo)):
 
 Define custom elements in the index.js or main.js file:
 
