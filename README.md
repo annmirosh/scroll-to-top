@@ -13,13 +13,14 @@ frameworks or in the VanillaJS app.
 
     `npm i scroll-to-top-btn`
 
-2. Depending on the framework that you use, enable the custom HTML elements and use ```<scroll-to-top-btn mode="light"></scroll-to-top-btn>``` tag in your code:
+2. Depending on the framework that you use, enable the custom HTML elements and use ```<scroll-to-top-btn></scroll-to-top-btn>``` tag in your code:
 
     - for *vanila js* project add script tag to the page:
 
     ```<script src="node_modules/scroll-to-top-btn/dist/scrolltotop.js"></script>```
 
-    - for *React* project define custom elements in the index.js or main.js file
+    - #### For React project:
+    Define custom elements in the index.js or main.js file
     (see React demo [here](https://github.com/annmirosh/scroll-to-top-demos/tree/master/react-demo))
 
     ```
@@ -30,7 +31,7 @@ frameworks or in the VanillaJS app.
     defineCustomElements(window);
     ```
 
-    Use it on your view:
+    Use the component on your view:
 
     ```
     import React from 'react';
