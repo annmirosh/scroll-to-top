@@ -5,7 +5,7 @@ This is a Web Component that implements a "scroll-to-top" button functionality.
 This component can be used with React, Angular, Ember, Vue.js
 frameworks or in the VanillaJS app.
 
-[Demo](https://annmirosh.github.io/scroll-to-top/)
+[Demo](https://annmirosh.github.io/scroll-to-top-site/)
 
 ## How to use:
 
