@@ -1,6 +1,6 @@
 {
   "name": "scroll-to-top-btn",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Scroll to top button component",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
